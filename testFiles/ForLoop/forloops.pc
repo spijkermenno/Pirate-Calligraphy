@@ -1,0 +1,6 @@
+SAIL
+    say<"increasing for loop">$
+    fer<number a ~ 0$ a below 10$ a++> [
+        say<a>$
+    ]
+RUM

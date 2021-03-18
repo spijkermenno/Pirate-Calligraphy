@@ -1,0 +1,38 @@
+SAIL
+
+say<"if statement calculation bigger than">$
+
+assuming<<40 / 2> above 21> [
+    say<"test 1">$
+]
+
+say<"if statement calculation smaller than">$
+
+assuming<<40 / 2> below 21> [
+    say<"test 2">$
+]
+
+say<"if statement calculation equals">$
+
+assuming<<40 / 2> ~~ 21> [
+    say<"test 3">$
+]
+
+say<"if statement calculation not equals">$
+
+assuming<<40 / 2> !~ 21> [
+    say<"test 4">$
+]
+
+say<"if statement true">$
+
+assuming<aye> [
+    say<"test 5">$
+]
+
+say<"if statement false">$
+
+assuming<nay> [
+    say<"test 6">$
+]
+RUM

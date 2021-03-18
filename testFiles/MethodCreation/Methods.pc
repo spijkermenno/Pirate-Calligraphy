@@ -1,0 +1,48 @@
+loud rope objective testMethod1<> [
+   rope test ~ "Method test 1"$
+   give test$
+]
+
+loud nothing objective testMethod2<> [
+   rope test ~ "Method test 2"$
+   say<test>$
+]
+
+covered number objective testMethod3<> [
+   rope test ~ "Method test 3"$
+   say<test>$
+   give 1$
+]
+
+quite duplicate objective testMethod4<> [
+   rope test ~ "Method test 4"$
+   say<test>$
+   give 2.0$
+]
+
+quite nothing objective testMethod5<number a> [
+   say<a>$
+]
+
+quite nothing objective testMethod6<duplicate a> [
+   say<a>$
+]
+
+quite nothing objective testMethod7<rope a> [
+   say<a>$
+]
+
+quite nothing objective testMethod7<rope a, number b> [
+   say<a>$
+   say<b>$
+]
+
+SAIL
+testMethod1<>$
+testMethod2<>$
+testMethod3<>$
+testMethod4<>$
+testMethod5<1>$
+testMethod6<1.0>$
+testMethod7<"Hello">$
+RUM

@@ -1,0 +1,42 @@
+SAIL
+    say<"Printing negative values">$
+    say<-5>$
+
+    say<"Variabele declaratie">$
+    number a ~ 0$
+
+    say<"adding and substracting one">$
+    a++$
+    a--$
+
+    say<"">$
+    a ~ a - 50$
+    a ~ a + 49$
+
+    assuming<a below 20> [
+        say<"This shouldn't be printed">$
+    ]
+
+    assuming<a above 20> [
+        say<"This should be printed">$
+    ]
+
+    assuming<a ~~ 20> [
+        say<"This shouldn't be printed">$
+    ]
+
+    assuming<a !~ 20> [
+        say<"This should be printed">$
+    ]
+
+    assuming<a ~~ 20 || a !~ 21> [
+        say<"This should be printed">$
+    ]
+
+    assuming<a ~~ 20 && a !~ 21> [
+        say<"This should be printed">$
+    ]
+
+
+
+RUM

@@ -1,0 +1,14 @@
+SAIL
+
+say<"While loop always true">$
+
+meantime<aye> [
+    say<"test 7">$
+]
+
+say<"While loop always calculation">$
+
+meantime<20 ~~ <40 / 2>> [
+    say<"test 8">$
+]
+RUM
